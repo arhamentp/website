@@ -52,8 +52,11 @@
 
 			var currentLocation = '' + window.location;
 			if (!currentLocation.endsWith('/')) {
-				window.location = currentLocation + '/';
+				//window.location = currentLocation + '/';
+			} else {
+				window.location = currentLocation.substr(0, currentLocation.length - 1)
 			}
+			
 
 			colors = ['cyan', 'orange', 'greenyellow', 'yellow', 'tomato', 'violet']
 
