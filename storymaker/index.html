@@ -165,7 +165,7 @@
 
 			function adjustCanvasDimensions() {
 				var scale = window.devicePixelRatio || 1;
-				var width = 1024; //window.innerWidth;
+				var width = window.innerWidth;
 				var height = window.innerHeight;
 				canvas.width = width * scale;
 				canvas.height = height * scale;
