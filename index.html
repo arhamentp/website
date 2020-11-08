@@ -51,7 +51,7 @@
 		$(function() {
 
 			var currentLocation = '' + window.location;
-			if (!currentLocation.endsWith('/')) {
+			if (!currentLocation.endsWith('/') && !currentLocation.endsWith('.html')) {
 				window.location = currentLocation + '/';
 			}
 
